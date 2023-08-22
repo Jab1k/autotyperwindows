@@ -11,8 +11,11 @@ class DiscordApp:
         self.root = root
         self.root.title("Discord App")
 
-        self.message_label = tk.Label(root, text="Message:")
+        self.message_label = tk.Label(root, text="Message:", width=15)
         self.message_label.pack()
+
+        larger_font = ("Helvetica", 16)
+        self.message_label.config(font=larger_font)
 
         self.message_entry = tk.Entry(root, width=40)
         self.message_entry.pack(padx=25)
